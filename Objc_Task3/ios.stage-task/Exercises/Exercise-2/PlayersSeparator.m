@@ -8,7 +8,7 @@
     return result;
 }
 
-// use ratingArray[i] > ratingArray[j] > ratingArray[k]
+// Seeks teams by rule: ratingArray[i] > ratingArray[j] > ratingArray[k]
 - (NSInteger)countTeams:(NSArray<NSNumber *>*)ratingArray {
     int result = 0;
     for (int i = 0; i < ratingArray.count - 2; i++) {
