@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		653D71072CBFE6B400F79C7A /* NSString+Exercise3.m in Sources */ = {isa = PBXBuildFile; fileRef = 653D71062CBFE6B400F79C7A /* NSString+Exercise3.m */; };
 		7AF396612656A588003A569D /* LevelOrderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF396602656A588003A569D /* LevelOrderTests.m */; };
 		820FABB2265679FC008CFD09 /* DateTasks.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 820FABB1265679FC008CFD09 /* DateTasks.pdf */; };
 		820FABBD26567D60008CFD09 /* NSDate+CustomDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 820FABBC26567D60008CFD09 /* NSDate+CustomDate.m */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		653D71052CBFDF4200F79C7A /* NSString+Exercise3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Exercise3.h"; sourceTree = "<group>"; };
+		653D71062CBFE6B400F79C7A /* NSString+Exercise3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Exercise3.m"; sourceTree = "<group>"; };
 		7AF396602656A588003A569D /* LevelOrderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelOrderTests.m; sourceTree = "<group>"; };
 		820FABB1265679FC008CFD09 /* DateTasks.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = DateTasks.pdf; sourceTree = "<group>"; };
 		820FABBB26567D60008CFD09 /* NSDate+CustomDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CustomDate.h"; sourceTree = "<group>"; };
@@ -121,6 +124,8 @@
 				82ADF96B26558D6A00D81DB7 /* LexicographicallyMinimal.pdf */,
 				82ADF96C26558D6A00D81DB7 /* LexicographicallyMinimal.h */,
 				82ADF96D26558D6A00D81DB7 /* LexicographicallyMinimal.m */,
+				653D71052CBFDF4200F79C7A /* NSString+Exercise3.h */,
+				653D71062CBFE6B400F79C7A /* NSString+Exercise3.m */,
 			);
 			path = "Exercise-3";
 			sourceTree = "<group>";
@@ -298,6 +303,7 @@
 				8293ECB926346C7500CEE768 /* main.m in Sources */,
 				82ADF96626558D6400D81DB7 /* LevelOrderTraversal.m in Sources */,
 				82ADF97326558D7000D81DB7 /* PlayersSeparator.m in Sources */,
+				653D71072CBFE6B400F79C7A /* NSString+Exercise3.m in Sources */,
 				820FABBD26567D60008CFD09 /* NSDate+CustomDate.m in Sources */,
 				82ADF97D26566AC400D81DB7 /* DateHelper.m in Sources */,
 			);
