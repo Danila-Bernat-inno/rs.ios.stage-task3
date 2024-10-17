@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		653D71072CBFE6B400F79C7A /* NSString+Exercise3.m in Sources */ = {isa = PBXBuildFile; fileRef = 653D71062CBFE6B400F79C7A /* NSString+Exercise3.m */; };
-		65D13D602CC1272900B46E99 /* BinaryTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D13D5F2CC1272900B46E99 /* BinaryTreeNode.m */; };
 		65D13D652CC13DBE00B46E99 /* NSMutableArray+NestedAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D13D642CC13DBE00B46E99 /* NSMutableArray+NestedAdd.m */; };
 		65D13D692CC1511800B46E99 /* NSArray+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D13D682CC1511800B46E99 /* NSArray+SafeAccess.m */; };
 		7AF396612656A588003A569D /* LevelOrderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF396602656A588003A569D /* LevelOrderTests.m */; };
@@ -43,8 +42,6 @@
 /* Begin PBXFileReference section */
 		653D71052CBFDF4200F79C7A /* NSString+Exercise3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Exercise3.h"; sourceTree = "<group>"; };
 		653D71062CBFE6B400F79C7A /* NSString+Exercise3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Exercise3.m"; sourceTree = "<group>"; };
-		65D13D5F2CC1272900B46E99 /* BinaryTreeNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BinaryTreeNode.m; sourceTree = "<group>"; };
-		65D13D612CC1273900B46E99 /* BinaryTreeNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryTreeNode.h; sourceTree = "<group>"; };
 		65D13D632CC13DBE00B46E99 /* NSMutableArray+NestedAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+NestedAdd.h"; sourceTree = "<group>"; };
 		65D13D642CC13DBE00B46E99 /* NSMutableArray+NestedAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+NestedAdd.m"; sourceTree = "<group>"; };
 		65D13D672CC1510E00B46E99 /* NSArray+SafeAccess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+SafeAccess.h"; sourceTree = "<group>"; };
@@ -97,15 +94,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		65D13D5E2CC1271400B46E99 /* Tree */ = {
-			isa = PBXGroup;
-			children = (
-				65D13D5F2CC1272900B46E99 /* BinaryTreeNode.m */,
-				65D13D612CC1273900B46E99 /* BinaryTreeNode.h */,
-			);
-			path = Tree;
-			sourceTree = "<group>";
-		};
 		65D13D622CC13DA200B46E99 /* NSMutableArray+Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,7 +159,6 @@
 			children = (
 				65D13D662CC150F700B46E99 /* NSArray+Extension */,
 				65D13D622CC13DA200B46E99 /* NSMutableArray+Extension */,
-				65D13D5E2CC1271400B46E99 /* Tree */,
 				82ADF96426558D6400D81DB7 /* LevelOrderTraversal.md */,
 				82ADF96526558D6400D81DB7 /* LevelOrderTraversal.h */,
 				82ADF95F26558D6400D81DB7 /* LevelOrderTraversal.m */,
@@ -342,7 +329,6 @@
 				8293ECB926346C7500CEE768 /* main.m in Sources */,
 				82ADF96626558D6400D81DB7 /* LevelOrderTraversal.m in Sources */,
 				65D13D652CC13DBE00B46E99 /* NSMutableArray+NestedAdd.m in Sources */,
-				65D13D602CC1272900B46E99 /* BinaryTreeNode.m in Sources */,
 				82ADF97326558D7000D81DB7 /* PlayersSeparator.m in Sources */,
 				65D13D692CC1511800B46E99 /* NSArray+SafeAccess.m in Sources */,
 				653D71072CBFE6B400F79C7A /* NSString+Exercise3.m in Sources */,

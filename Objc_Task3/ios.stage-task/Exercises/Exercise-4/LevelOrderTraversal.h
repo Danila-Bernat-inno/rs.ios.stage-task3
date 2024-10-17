@@ -2,7 +2,6 @@
 #define LevelOrderTraversal_h
 
 #import <Foundation/Foundation.h>
-#import "BinaryTreeNode.h"
 #import "NSMutableArray+NestedAdd.h"
 #import "NSArray+SafeAccess.h"
 
