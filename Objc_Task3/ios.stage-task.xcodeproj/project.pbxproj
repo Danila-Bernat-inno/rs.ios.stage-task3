@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		653D71072CBFE6B400F79C7A /* NSString+Exercise3.m in Sources */ = {isa = PBXBuildFile; fileRef = 653D71062CBFE6B400F79C7A /* NSString+Exercise3.m */; };
 		65D13D602CC1272900B46E99 /* BinaryTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D13D5F2CC1272900B46E99 /* BinaryTreeNode.m */; };
-		65D13D652CC13DBE00B46E99 /* NSMutableArray+BinaryTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D13D642CC13DBE00B46E99 /* NSMutableArray+BinaryTreeNode.m */; };
+		65D13D652CC13DBE00B46E99 /* NSMutableArray+NestedAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D13D642CC13DBE00B46E99 /* NSMutableArray+NestedAdd.m */; };
+		65D13D692CC1511800B46E99 /* NSArray+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D13D682CC1511800B46E99 /* NSArray+SafeAccess.m */; };
 		7AF396612656A588003A569D /* LevelOrderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF396602656A588003A569D /* LevelOrderTests.m */; };
 		820FABB2265679FC008CFD09 /* DateTasks.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 820FABB1265679FC008CFD09 /* DateTasks.pdf */; };
 		820FABBD26567D60008CFD09 /* NSDate+CustomDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 820FABBC26567D60008CFD09 /* NSDate+CustomDate.m */; };
@@ -44,8 +45,10 @@
 		653D71062CBFE6B400F79C7A /* NSString+Exercise3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Exercise3.m"; sourceTree = "<group>"; };
 		65D13D5F2CC1272900B46E99 /* BinaryTreeNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BinaryTreeNode.m; sourceTree = "<group>"; };
 		65D13D612CC1273900B46E99 /* BinaryTreeNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryTreeNode.h; sourceTree = "<group>"; };
-		65D13D632CC13DBE00B46E99 /* NSMutableArray+BinaryTreeNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+BinaryTreeNode.h"; sourceTree = "<group>"; };
-		65D13D642CC13DBE00B46E99 /* NSMutableArray+BinaryTreeNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+BinaryTreeNode.m"; sourceTree = "<group>"; };
+		65D13D632CC13DBE00B46E99 /* NSMutableArray+NestedAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+NestedAdd.h"; sourceTree = "<group>"; };
+		65D13D642CC13DBE00B46E99 /* NSMutableArray+NestedAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+NestedAdd.m"; sourceTree = "<group>"; };
+		65D13D672CC1510E00B46E99 /* NSArray+SafeAccess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+SafeAccess.h"; sourceTree = "<group>"; };
+		65D13D682CC1511800B46E99 /* NSArray+SafeAccess.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SafeAccess.m"; sourceTree = "<group>"; };
 		7AF396602656A588003A569D /* LevelOrderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelOrderTests.m; sourceTree = "<group>"; };
 		820FABB1265679FC008CFD09 /* DateTasks.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = DateTasks.pdf; sourceTree = "<group>"; };
 		820FABBB26567D60008CFD09 /* NSDate+CustomDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CustomDate.h"; sourceTree = "<group>"; };
@@ -103,13 +106,22 @@
 			path = Tree;
 			sourceTree = "<group>";
 		};
-		65D13D622CC13DA200B46E99 /* NSMutable+Extension */ = {
+		65D13D622CC13DA200B46E99 /* NSMutableArray+Extension */ = {
 			isa = PBXGroup;
 			children = (
-				65D13D632CC13DBE00B46E99 /* NSMutableArray+BinaryTreeNode.h */,
-				65D13D642CC13DBE00B46E99 /* NSMutableArray+BinaryTreeNode.m */,
+				65D13D632CC13DBE00B46E99 /* NSMutableArray+NestedAdd.h */,
+				65D13D642CC13DBE00B46E99 /* NSMutableArray+NestedAdd.m */,
 			);
-			path = "NSMutable+Extension";
+			path = "NSMutableArray+Extension";
+			sourceTree = "<group>";
+		};
+		65D13D662CC150F700B46E99 /* NSArray+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				65D13D672CC1510E00B46E99 /* NSArray+SafeAccess.h */,
+				65D13D682CC1511800B46E99 /* NSArray+SafeAccess.m */,
+			);
+			path = "NSArray+Extension";
 			sourceTree = "<group>";
 		};
 		820FABC026567EFA008CFD09 /* Category */ = {
@@ -157,7 +169,8 @@
 		8275DDD2264C16A100838828 /* Exercise-4 */ = {
 			isa = PBXGroup;
 			children = (
-				65D13D622CC13DA200B46E99 /* NSMutable+Extension */,
+				65D13D662CC150F700B46E99 /* NSArray+Extension */,
+				65D13D622CC13DA200B46E99 /* NSMutableArray+Extension */,
 				65D13D5E2CC1271400B46E99 /* Tree */,
 				82ADF96426558D6400D81DB7 /* LevelOrderTraversal.md */,
 				82ADF96526558D6400D81DB7 /* LevelOrderTraversal.h */,
@@ -328,9 +341,10 @@
 				8293ECA826346C7100CEE768 /* AppDelegate.m in Sources */,
 				8293ECB926346C7500CEE768 /* main.m in Sources */,
 				82ADF96626558D6400D81DB7 /* LevelOrderTraversal.m in Sources */,
-				65D13D652CC13DBE00B46E99 /* NSMutableArray+BinaryTreeNode.m in Sources */,
+				65D13D652CC13DBE00B46E99 /* NSMutableArray+NestedAdd.m in Sources */,
 				65D13D602CC1272900B46E99 /* BinaryTreeNode.m in Sources */,
 				82ADF97326558D7000D81DB7 /* PlayersSeparator.m in Sources */,
+				65D13D692CC1511800B46E99 /* NSArray+SafeAccess.m in Sources */,
 				653D71072CBFE6B400F79C7A /* NSString+Exercise3.m in Sources */,
 				820FABBD26567D60008CFD09 /* NSDate+CustomDate.m in Sources */,
 				82ADF97D26566AC400D81DB7 /* DateHelper.m in Sources */,

@@ -3,7 +3,8 @@
 
 #import <Foundation/Foundation.h>
 #import "BinaryTreeNode.h"
-#import "NSMutableArray+BinaryTreeNode.h"
+#import "NSMutableArray+NestedAdd.h"
+#import "NSArray+SafeAccess.h"
 
 NSArray *LevelOrderTraversalForTree(NSArray *tree);
 

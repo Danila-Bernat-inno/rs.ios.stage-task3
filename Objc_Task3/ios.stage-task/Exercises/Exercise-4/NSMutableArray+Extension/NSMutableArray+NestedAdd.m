@@ -1,11 +1,11 @@
 //
-//  NSMutableArray+BinaryTreeNode.m
+//  NSMutableArray+NestedAdd.m
 //  ios.stage-task
 //
 //  Created by Danila Bernat on 17/10/2024.
 //
 
-#import "NSMutableArray+BinaryTreeNode.h"
+#import "NSMutableArray+NestedAdd.h"
 
 @implementation NSMutableArray (NestedAdd)
 
