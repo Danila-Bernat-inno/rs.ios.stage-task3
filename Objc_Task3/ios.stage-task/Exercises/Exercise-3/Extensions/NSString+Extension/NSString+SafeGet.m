@@ -1,15 +1,14 @@
 //
-//  NSString+Exercise3.m
+//  NSString+SafeGet.m
 //  ios.stage-task
 //
 //  Created by Danila Bernat on 16/10/2024.
 //
 
-#import "NSString+Exercise3.h"
+#import "NSString+SafeGet.h"
 
-@implementation NSString (Exercise3)
+@implementation NSString (SafeGet)
 
-// return unichar.maxValue when self.length < 1
 - (unichar)getSafeFirstCharacterFromString {
     if (self.length < 1) {
         return UINT16_MAX;

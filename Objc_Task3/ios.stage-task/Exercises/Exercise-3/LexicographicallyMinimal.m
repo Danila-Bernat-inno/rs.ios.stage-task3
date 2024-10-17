@@ -1,5 +1,6 @@
 #import "LexicographicallyMinimal.h"
-#import "NSString+Exercise3.h"
+#import "NSString+SafeGet.h"
+#import "NSMutableString+Helpers.h"
 
 @interface LexicographicallyMinimal()
 
@@ -14,33 +15,30 @@
     NSMutableString *string2Mutable = [string2 mutableCopy];
     NSMutableString *resultString = [NSMutableString new];
 
-    while (string1Mutable.length > 0 || string2Mutable.length > 0) {
-        unichar letter = [self getAndRemoveLexicographicallyMinimalLetterFromString1:string1Mutable andString2: string2Mutable];
-        [self addCharacter:letter toMutableString:resultString];
-    }
+    [self saveAndRemoveLexicographicallyMinimalLettersFromString1:string1Mutable andString2:string2Mutable toStringRef:resultString];
 
     return resultString;
 }
 
-- (unichar)getAndRemoveLexicographicallyMinimalLetterFromString1:(NSMutableString *)string1 andString2:(NSMutableString *)string2 {
+- (void)saveAndRemoveLexicographicallyMinimalLettersFromString1:(NSMutableString *)string1
+                                                     andString2:(NSMutableString *)string2
+                                                    toStringRef:(NSMutableString *)resultStringRef {
     unichar letterFromStr1 = [string1 getSafeFirstCharacterFromString];
     unichar letterFromStr2 = [string2 getSafeFirstCharacterFromString];
+    unichar resultLetter;
+
+    if (letterFromStr1 == UINT16_MAX && letterFromStr2 == UINT16_MAX) {
+        return;
+    }
 
     if ((NSInteger)letterFromStr1 <= (NSInteger)letterFromStr2) {
-        return [self getAndRemoveFirstLetterFromString:string1];
+        resultLetter = [string1 getAndRemoveFirstLetter];
     } else {
-        return [self getAndRemoveFirstLetterFromString:string2];
+        resultLetter = [string2 getAndRemoveFirstLetter];
     }
-}
 
-- (unichar)getAndRemoveFirstLetterFromString:(NSMutableString *)string {
-    unichar letter = [string characterAtIndex:0];
-    [string deleteCharactersInRange:NSMakeRange(0, 1)];
-    return letter;
-}
-
-- (void)addCharacter:(unichar)character toMutableString:(NSMutableString *)mutableString {
-    [mutableString appendFormat:@"%C", character];
+    [resultStringRef addCharacter:resultLetter];
+    [self saveAndRemoveLexicographicallyMinimalLettersFromString1:string1 andString2:string2 toStringRef:resultStringRef];
 }
 
 @end

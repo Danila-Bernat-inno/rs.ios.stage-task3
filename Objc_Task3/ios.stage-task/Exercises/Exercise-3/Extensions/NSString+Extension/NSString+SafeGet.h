@@ -1,5 +1,5 @@
 //
-//  NSString+NSString_Extension.h
+//  NSString+SafeGet.h
 //  ios.stage-task
 //
 //  Created by Danila Bernat on 16/10/2024.
@@ -7,9 +7,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSString (Exercise3)
+@interface NSString (SafeGet)
 
-// Return '0' when string length < 1
+// return UINT16_MAX when self.length < 1
 - (unichar)getSafeFirstCharacterFromString;
 
 @end
