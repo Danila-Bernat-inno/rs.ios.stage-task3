@@ -18,7 +18,6 @@
     return letter;
 }
 
-
 - (void)addCharacter:(unichar)character {
     [self appendFormat:@"%C", character];
 }
