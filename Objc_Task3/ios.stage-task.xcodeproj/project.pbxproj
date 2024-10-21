@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		653D71072CBFE6B400F79C7A /* NSString+SafeGet.m in Sources */ = {isa = PBXBuildFile; fileRef = 653D71062CBFE6B400F79C7A /* NSString+SafeGet.m */; };
+		65D13D652CC13DBE00B46E99 /* NSMutableArray+NestedAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D13D642CC13DBE00B46E99 /* NSMutableArray+NestedAdd.m */; };
+		65D13D692CC1511800B46E99 /* NSArray+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D13D682CC1511800B46E99 /* NSArray+SafeAccess.m */; };
+		65D13D742CC16C4300B46E99 /* NSMutableString+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D13D732CC16C4300B46E99 /* NSMutableString+Helpers.m */; };
 		7AF396612656A588003A569D /* LevelOrderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF396602656A588003A569D /* LevelOrderTests.m */; };
 		820FABB2265679FC008CFD09 /* DateTasks.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 820FABB1265679FC008CFD09 /* DateTasks.pdf */; };
 		820FABBD26567D60008CFD09 /* NSDate+CustomDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 820FABBC26567D60008CFD09 /* NSDate+CustomDate.m */; };
@@ -37,6 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		653D71052CBFDF4200F79C7A /* NSString+SafeGet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+SafeGet.h"; sourceTree = "<group>"; };
+		653D71062CBFE6B400F79C7A /* NSString+SafeGet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+SafeGet.m"; sourceTree = "<group>"; };
+		65D13D632CC13DBE00B46E99 /* NSMutableArray+NestedAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+NestedAdd.h"; sourceTree = "<group>"; };
+		65D13D642CC13DBE00B46E99 /* NSMutableArray+NestedAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+NestedAdd.m"; sourceTree = "<group>"; };
+		65D13D672CC1510E00B46E99 /* NSArray+SafeAccess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+SafeAccess.h"; sourceTree = "<group>"; };
+		65D13D682CC1511800B46E99 /* NSArray+SafeAccess.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SafeAccess.m"; sourceTree = "<group>"; };
+		65D13D732CC16C4300B46E99 /* NSMutableString+Helpers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+Helpers.m"; sourceTree = "<group>"; };
+		65D13D752CC16C5B00B46E99 /* NSMutableString+Helpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+Helpers.h"; sourceTree = "<group>"; };
 		7AF396602656A588003A569D /* LevelOrderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelOrderTests.m; sourceTree = "<group>"; };
 		820FABB1265679FC008CFD09 /* DateTasks.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = DateTasks.pdf; sourceTree = "<group>"; };
 		820FABBB26567D60008CFD09 /* NSDate+CustomDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CustomDate.h"; sourceTree = "<group>"; };
@@ -85,6 +97,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65D13D622CC13DA200B46E99 /* NSMutableArray+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				65D13D632CC13DBE00B46E99 /* NSMutableArray+NestedAdd.h */,
+				65D13D642CC13DBE00B46E99 /* NSMutableArray+NestedAdd.m */,
+			);
+			path = "NSMutableArray+Extension";
+			sourceTree = "<group>";
+		};
+		65D13D662CC150F700B46E99 /* NSArray+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				65D13D672CC1510E00B46E99 /* NSArray+SafeAccess.h */,
+				65D13D682CC1511800B46E99 /* NSArray+SafeAccess.m */,
+			);
+			path = "NSArray+Extension";
+			sourceTree = "<group>";
+		};
+		65D13D6A2CC16BB300B46E99 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				65D13D622CC13DA200B46E99 /* NSMutableArray+Extension */,
+				65D13D662CC150F700B46E99 /* NSArray+Extension */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		65D13D6B2CC16BCC00B46E99 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				65D13D6D2CC16BD800B46E99 /* NSMutableString+Extension */,
+				65D13D6C2CC16BD500B46E99 /* NSString+Extension */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		65D13D6C2CC16BD500B46E99 /* NSString+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				653D71052CBFDF4200F79C7A /* NSString+SafeGet.h */,
+				653D71062CBFE6B400F79C7A /* NSString+SafeGet.m */,
+			);
+			path = "NSString+Extension";
+			sourceTree = "<group>";
+		};
+		65D13D6D2CC16BD800B46E99 /* NSMutableString+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				65D13D752CC16C5B00B46E99 /* NSMutableString+Helpers.h */,
+				65D13D732CC16C4300B46E99 /* NSMutableString+Helpers.m */,
+			);
+			path = "NSMutableString+Extension";
+			sourceTree = "<group>";
+		};
 		820FABC026567EFA008CFD09 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +184,7 @@
 		8275DDCD264C16A100838828 /* Exercise-3 */ = {
 			isa = PBXGroup;
 			children = (
+				65D13D6B2CC16BCC00B46E99 /* Extensions */,
 				82ADF96B26558D6A00D81DB7 /* LexicographicallyMinimal.pdf */,
 				82ADF96C26558D6A00D81DB7 /* LexicographicallyMinimal.h */,
 				82ADF96D26558D6A00D81DB7 /* LexicographicallyMinimal.m */,
@@ -128,6 +195,7 @@
 		8275DDD2264C16A100838828 /* Exercise-4 */ = {
 			isa = PBXGroup;
 			children = (
+				65D13D6A2CC16BB300B46E99 /* Extensions */,
 				82ADF96426558D6400D81DB7 /* LevelOrderTraversal.md */,
 				82ADF96526558D6400D81DB7 /* LevelOrderTraversal.h */,
 				82ADF95F26558D6400D81DB7 /* LevelOrderTraversal.m */,
@@ -239,6 +307,7 @@
 				TargetAttributes = {
 					8293ECA226346C7100CEE768 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1600;
 					};
 					8293ECBD26346C7500CEE768 = {
 						CreatedOnToolsVersion = 12.3;
@@ -297,9 +366,13 @@
 				8293ECA826346C7100CEE768 /* AppDelegate.m in Sources */,
 				8293ECB926346C7500CEE768 /* main.m in Sources */,
 				82ADF96626558D6400D81DB7 /* LevelOrderTraversal.m in Sources */,
+				65D13D652CC13DBE00B46E99 /* NSMutableArray+NestedAdd.m in Sources */,
 				82ADF97326558D7000D81DB7 /* PlayersSeparator.m in Sources */,
+				65D13D692CC1511800B46E99 /* NSArray+SafeAccess.m in Sources */,
+				653D71072CBFE6B400F79C7A /* NSString+SafeGet.m in Sources */,
 				820FABBD26567D60008CFD09 /* NSDate+CustomDate.m in Sources */,
 				82ADF97D26566AC400D81DB7 /* DateHelper.m in Sources */,
+				65D13D742CC16C4300B46E99 /* NSMutableString+Helpers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +515,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "ios.stage-task/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -451,6 +525,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "rs.school.ios-stage-task";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -460,6 +536,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "ios.stage-task/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -469,6 +546,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "rs.school.ios-stage-task";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

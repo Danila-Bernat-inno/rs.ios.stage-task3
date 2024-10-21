@@ -1,4 +1,5 @@
 #import <Foundation/Foundation.h>
+#import "NSMutableString+Helpers.h"
 
 @interface LexicographicallyMinimal : NSObject
 

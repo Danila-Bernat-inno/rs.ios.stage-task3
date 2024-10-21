@@ -2,6 +2,8 @@
 #define LevelOrderTraversal_h
 
 #import <Foundation/Foundation.h>
+#import "NSMutableArray+NestedAdd.h"
+#import "NSArray+SafeAccess.h"
 
 NSArray *LevelOrderTraversalForTree(NSArray *tree);
 

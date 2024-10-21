@@ -4,6 +4,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DateHelper : NSObject
 
+@property (class, nonatomic, readonly) NSDateFormatter *sharedDateFormatter;
 - (NSString *)monthNameBy:(NSUInteger)monthNumber;
 - (long)dayFromDate:(NSString *)date;
 - (NSString *)getDayName:(NSDate *)date;
